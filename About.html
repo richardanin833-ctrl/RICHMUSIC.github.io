@@ -1,0 +1,120 @@
+<!-- about.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - RhythmVibe</title>
+</head>
+<body>
+  <header>
+    <h1>About RhythmVibe</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="specifications.html">Specifications</a>
+      <a href="products.html">Products</a>
+      <a href="connect.html">Connect</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="about-intro">
+      <h2>Our Story</h2>
+      <p>RhythmVibe was born out of a passion for sound, rhythm, and connection. We believe music is not just entertainment—it's emotion, culture, and unity. Our platform helps listeners dive deep into global beats while empowering emerging artists to share their voice.</p>
+    </section>
+
+    <section class="mission">
+      <h2>Our Mission</h2>
+      <p>To amplify diverse musical voices around the world, create spaces for undiscovered talent, and bring people together through shared sonic experiences.</p>
+    </section>
+
+    <section class="team">
+      <h2>Meet the Team</h2>
+      <ul>
+        <li>Richard Anin - Founder & Creative Director</li>
+        <li>Abena D. - Content Curator</li>
+        <li>Kizzita Bot - Web Architect</li>
+        <li>Jamal K. - Community Manager</li>
+      </ul>
+    </section>
+
+    <section class="fun-fact">
+      <h2>Did You Know?</h2>
+      <p id="fact">Loading fun music fact...</p>
+      <button onclick="loadFact()">Show Fun Fact</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 RhythmVibe. Built with passion for music.</p>
+  </footer>
+
+  <!-- JavaScript Section -->
+  <script>
+    const facts = [
+      "The most expensive musical instrument sold was a Stradivarius violin for $15.9 million.",
+      "The world’s longest concert lasted 639 years (John Cage’s 'As Slow As Possible').",
+      "Mozart wrote his first symphony when he was just eight years old.",
+      "The Beatles hold the record for most number one hits on the Billboard Hot 100."
+    ];
+
+    function loadFact() {
+      const randomFact = facts[Math.floor(Math.random() * facts.length)];
+      document.getElementById("fact").textContent = randomFact;
+    }
+  </script>
+
+  <!-- CSS Section -->
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4') no-repeat center center fixed;
+      background-size: cover;
+      color: #f9f9f9;
+    }
+    header {
+      background: rgba(42, 42, 82, 0.9);
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #f1f1f1;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 8px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    section h2 {
+      color: #ffd700;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #ffd700;
+      color: #000;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    footer {
+      background-color: rgba(0, 0, 0, 0.9);
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</body>
+</html>

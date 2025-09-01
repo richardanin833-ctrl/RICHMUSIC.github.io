@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BigWillyn's Music Website</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body> 
+    <div class="container">
+        <div class="navbar">
+            <img src="rich webtools/logo.jpg" class="logo">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="About.html">ABOUT</a></li>
+                <li><a href="#">SPECIFICATIONS</a></li>
+                <li><a href="#">PRODUCT</a></li>
+                <li><a href="#">CONNECT</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="left-col">
+            <h1>THE<br>REAL<br>SOUND</h1>
+            </div>
+        </div>
+        <div class="right-col">
+            <p>Click Here To Listen</p>
+            <img src="rich webtools/play.png" id="icon">  
+        </div>
+    </div>
+
+
+    <audio id="mySong">
+        <source src="rich webtools/alan_walker_the_spectre_mp3_77200.mp3">
+    </audio>
+
+<script>
+    var mySong = document.getElementById("mySong");
+    var icon = document.getElementById("icon");
+
+    icon.onclick = function(){
+        if(mySong.paused){
+            mySong.play();
+            icon.src= "rich webtools/pause.jpg";
+        }else{
+            mySong.pause();
+            icon.src = "rich webtools/play.png";
+        }
+    }
+
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
+

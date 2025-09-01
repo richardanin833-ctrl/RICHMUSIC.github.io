@@ -1,0 +1,50 @@
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4') no-repeat center center fixed;
+      background-size: cover;
+      color: #f9f9f9;
+    }
+    header {
+      background: rgba(42, 42, 82, 0.9);
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #f1f1f1;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 8px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    section h2 {
+      color: #ffd700;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #ffd700;
+      color: #000;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    footer {
+      background-color: rgba(0, 0, 0, 0.9);
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  
